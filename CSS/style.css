@@ -181,9 +181,9 @@ padding: 5px 10px;
     margin-left: 8px;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 991px) {
     .navbar .navbar-nav {
-        padding: 0 15px;
+        padding: 10px 15px;
         background: var(--primary);
     }
 
