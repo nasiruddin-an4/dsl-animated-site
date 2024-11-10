@@ -47,14 +47,15 @@
     });
 
 
-    // Testimonials carousel
-    $('.testimonial-carousel').owlCarousel({
+    // App carousel
+    $('.app-carousel').owlCarousel({
         items: 3,          // Number of items to display
         loop: true,        // Enable looping
         autoplay: true,    // Enable autoplay
-        margin: 20,        // Space between items (adjust as needed)
+        margin: 20,        // Space between items
         dots: true,        // Show dots
         nav: false,        // Hide navigation arrows
+        center: true,      // Center the middle item
         responsive: {
             0: {
                 items: 1   // 1 item on small screens
@@ -68,5 +69,54 @@
         }
     });
     
+
+    // Testimonials carousel
+    $('.testimonial-carousel').owlCarousel({
+        items: 3,          // Number of items to display
+        loop: true,        // Enable looping
+        autoplay: true,    // Enable autoplay
+        margin: 20,        // Space between items
+        dots: true,        // Show dots
+        nav: false,        // Hide navigation arrows
+        center: true,      // Center the middle item
+        responsive: {
+            0: {
+                items: 1   // 1 item on small screens
+            },
+            768: {
+                items: 2   // 2 items on medium screens
+            },
+            1024: {
+                items: 3   // 3 items on larger screens
+            }
+        }
+    });
+
+
+
 })(jQuery);
 
+// Counter Js
+
+(() => {
+    const counter = document.querySelectorAll('.counter');
+    // covert to array
+    const array = Array.from(counter);
+    // select array element
+    array.map((item) => {
+        // data layer
+        let counterInnerText = item.textContent;
+
+        let count = 1;
+        let speed = item.dataset.speed / counterInnerText
+        function counterUp() {
+            item.textContent = count++
+            if (counterInnerText < count) {
+                clearInterval(stop);
+            }
+        }
+        const stop = setInterval(() => {
+            counterUp();
+        }, speed);
+    })
+})()
