@@ -72,22 +72,21 @@
 
     // Testimonials carousel
     $('.testimonial-carousel').owlCarousel({
-        items: 3,          // Number of items to display
+        items: 3,          // Default to 3 items for large screens
         loop: true,        // Enable looping
         autoplay: true,    // Enable autoplay
         margin: 20,        // Space between items
         dots: true,        // Show dots
         nav: false,        // Hide navigation arrows
-        center: true,      // Center the middle item
         responsive: {
             0: {
-                items: 1   // 1 item on small screens
+                items: 1   // 1 item on small screens (e.g., mobile)
             },
             768: {
-                items: 2   // 2 items on medium screens
+                items: 2   // 2 items on medium screens (e.g., tablets)
             },
             1024: {
-                items: 3   // 3 items on larger screens
+                items: 3   // 3 items on larger screens (e.g., desktops)
             }
         }
     });
