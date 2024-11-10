@@ -1,0 +1,74 @@
+/* Base styles (default styles for larger screens) */
+
+  /* For Desktop and larger screens (above 1024px) */
+  @media screen and (min-width: 1025px) {
+    
+  }
+  
+  /* For Tablets (between 768px and 1024px) */
+  @media screen and (max-width: 1024px) and (min-width: 768px) {
+    
+  }
+
+  @media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        padding: 0 15px;
+        background: var(--primary);
+    }
+
+    .navbar .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    
+}
+  
+  /* For Mobile devices (below 768px) */
+  @media screen and (max-width: 767px) {
+    .pt-100{
+        padding-top: 20px !important;
+    }
+    .header-top {
+        display: none !important;
+    }
+    .navbar-brand img{
+        width: 80%;
+    }
+    .hero-header{
+        padding: 200px 0px;
+    }
+    .hero-header h2{
+        font-size: 32px;
+    }
+    .feature{
+        margin-top: -120px;
+    }
+    .premium-software{
+        padding: 50px 0px;
+    }
+    .service-fotter-left h2 {
+        font-size: 24px;
+    }
+    .premium-software::before {
+        left: 0%;
+    }
+    .footer-social{
+        display: inline-block;
+    }
+    .footer-social ul{
+        margin-left: -30px;
+    }
+    .footer-social ul li{
+        list-style: none;
+        margin: 0px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .footer-social ul li a{
+        color: white !important;
+        font-size: 20px;
+    }
+  }

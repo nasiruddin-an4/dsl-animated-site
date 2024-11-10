@@ -73,7 +73,6 @@ img {
     text-decoration: none;
 }
 
-
 .navbar-collapse .btn-1{
     margin-left: 100px;
 }
@@ -150,8 +149,6 @@ padding: 5px 10px;
     END Header Top
 *=============================================*/
 
-
-
 /*** Navbar ***/
 .sticky-top {
     top: -150px;
@@ -182,37 +179,6 @@ padding: 5px 10px;
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
-}
-
-@media (max-width: 991.98px) {
-    .navbar .navbar-nav {
-        padding: 0 15px;
-        background: var(--primary);
-    }
-
-    .navbar .navbar-nav .nav-link  {
-        margin-right: 0;
-        padding: 10px 0;
-    }
-}
-
-@media (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        border: none;
-        margin-top: 0;
-        top: 150%;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s;
-    }
-
-    .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        visibility: visible;
-        transition: .5s;
-        opacity: 1;
-    }
 }
 
 
@@ -357,7 +323,7 @@ h3{
     position: relative;
     background-color: #150B5E;
     color: #ffffff;
-    padding: 150px;
+    padding: 150px 0px;
     justify-content: center;
     align-items: center;
     margin-top: -100px;
@@ -389,7 +355,6 @@ h3{
 *=============================================*/
 .Technology {
     background-color: #eefafc;
-    
 }
 
 .tech-item {
