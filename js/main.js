@@ -25,6 +25,20 @@
         }
     });
 
+    $(document).ready(function() {
+        $('#navbarToggle').click(function() {
+            // Toggle the visibility of the icons
+            $('.navbar-toggler-icon').toggle();
+            $('.close-icon').toggle();
+        });
+    
+        // Optional: Reset icons when the navbar is collapsed (e.g., after a link is clicked)
+        $('#navbarNav').on('hide.bs.collapse', function () {
+            $('.navbar-toggler-icon').show();
+            $('.close-icon').hide();
+        });
+    });
+
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
@@ -89,9 +103,6 @@
             }
         }
     });
-
-
-
 })(jQuery);
 
     // Counter Js

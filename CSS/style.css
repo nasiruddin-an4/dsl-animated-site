@@ -155,6 +155,17 @@ padding: 5px 10px;
     transition: .5s;
 }
 
+.close-icon {
+    font-size: 2.5em;
+    color: white;
+}
+/* Remove border and background from the navbar toggle button */
+#navbarToggle {
+    border: none;    /* Removes any background color */
+    outline: none;       /* Removes the outline that appears when focused */
+    box-shadow: none;    /* Removes any shadow around the button */
+}
+
 .navbar {
     padding: 11px 0 !important;
     height: 75px;
@@ -180,38 +191,6 @@ padding: 5px 10px;
     vertical-align: middle;
     margin-left: 8px;
 }
-
-@media (max-width: 991px) {
-    .navbar .navbar-nav {
-        padding: 10px 15px;
-        background: var(--primary);
-    }
-
-    .navbar .navbar-nav .nav-link  {
-        margin-right: 0;
-        padding: 10px 0;
-    }
-}
-
-@media (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        border: none;
-        margin-top: 0;
-        top: 150%;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s;
-    }
-
-    .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        visibility: visible;
-        transition: .5s;
-        opacity: 1;
-    }
-}
-
 
 /*** Hero Header ***/
 .hero-header {
@@ -316,12 +295,9 @@ h3{
     background-color: #150B5E;
     padding: 50px 0px;
 }
-
-.service-card {
-    margin-bottom: 30px;
-    padding: 20px 30px;
+.service-card{
+    padding: 30px 20px;
 }
-
 .service-card h3{
     color: white;
 }
@@ -370,12 +346,6 @@ h3{
     background-color: rgba(170, 24, 255, 0.15);
     /* Adjust opacity to your preference */
     border-radius: 100% 0 0 0%;
-}
-
-.service-fotter-left h2 {
-    font-size: 3rem;
-    font-weight: 600;
-    padding-bottom: 20px;
 }
 /*============================================
     END Services Area 
