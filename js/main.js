@@ -61,7 +61,7 @@
     });
 
 
-    // App carousel
+    // app carousel
     $('.app-carousel').owlCarousel({
         items: 3,          // Default to 3 items for large screens
         loop: true,        // Enable looping
@@ -78,6 +78,28 @@
             },
             1024: {
                 items: 3   // 3 items on larger screens (e.g., desktops)
+            }
+        }
+    });
+
+
+    // Clients Logo carousel
+    $('.Clients-carousel').owlCarousel({
+        items: 5,          // Default to 3 items for large screens
+        loop: true,        // Enable looping
+        autoplay: true,    // Enable autoplay
+        margin: 20,        // Space between items
+        dots: true,        // Show dots
+        nav: false,        // Hide navigation arrows
+        responsive: {
+            0: {
+                items: 3  // For small devices
+              },
+              768: {
+                items: 3  // For medium devices (tablet)
+              },
+              1024: {
+                items: 5  // For large devices (desktop)
             }
         }
     });

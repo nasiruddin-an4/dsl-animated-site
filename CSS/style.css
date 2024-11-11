@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #1363C6;
+    --primary: #14183E;
     --secondary: #15ACE1;
     --light: #F4F7FE;
     --dark: #14183E;
@@ -414,15 +414,12 @@ h3{
 /*============================================
     Clients Slide start
 *=============================================*/
-.logos-slider {
-    overflow: hidden;
-    padding: 30px 0px;
-    white-space: nowrap;
-    position: relative;
+.logos-slider-container a{
+    align-items: center;
+    justify-content: center;
 }
-
-.logos-slider:before,
-.logos-slider:after {
+.logos-slider-container:before,
+.logos-slider-container:after {
     position: absolute;
     top: 0;
     content: '';
@@ -431,47 +428,20 @@ h3{
     z-index: 2;
 }
 
-.logos-slider:before {
+.logos-slider-container:before {
     left: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
-.logos-slider:after {
+.logos-slider-container:after {
     right: 0;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
-.logos-slider {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    position: relative;
-}
-
-.logos-slider-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: slide 30s linear infinite;
-}
-
 .logos-slider-container img {
-    width: 100px;
-    max-width: 100px;
-}
-
-.logos-slider-container a {
-    margin-left: 100px;
-}
-
-@keyframes slide {
-    0% {
-        transform: translate3d(0, 0, 0)
-    }
-
-    100% {
-        transform: translate3d(-100%, 0, 0)
-    }
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }
 
 /*============================================
