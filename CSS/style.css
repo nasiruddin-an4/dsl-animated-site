@@ -354,13 +354,8 @@ h3{
 /*============================================
     Technologies Area
 *=============================================*/
-.Technology {
-    background-color: #eefafc;
-}
-
 .tech-item {
     font-size: 14px;
-    background-color: #eefafc !important;
     border: none;
 }
 
@@ -383,27 +378,10 @@ h3{
 .nav-icon {
     font-size: 18px;
     margin-right: 5px;
-    color: #030c75;
 }
 
-.app-img {
+.app-img{
     width: 60px;
-    padding-bottom: 20px;
-}
-.app-content p{
-    color: black !important;
-}
-
-.mobile-app-card h2 {
-    font-size: 32px;
-    font-weight: 700;
-    padding: 10px 0px;
-}
-
-.testimonial-item{
-    background-color: white !important;
-    padding: 20px 20px !important;
-    border-radius: 10px;
 }
 
 /*============================================
@@ -490,65 +468,12 @@ h3{
 /*============================================
 Testimonilas Area
 *=============================================*/
-.testimonial-area {
-    background-color: rgb(243, 251, 255);
-}
-
-.card {
-    border-radius: 10px;
-    transition: all 0.3s;
-}
-
-.card-body {
-    padding: 20px;
-}
-
-.card:hover {
-    background-color: #090157;
-    color: white;
-
-}
-
-.card:hover .testimonials-title a {
-    color: white;
-}
-
-.card:hover .testimonial-info img {
-    border: 3px solid white;
-}
-
-.testimonial-info {
-    padding-bottom: 30px;
-    display: flex;
-    align-items: center !important;
-    justify-content: space-between;
-}
-
 .testimonial-info img {
     width: 80px !important;
     height: 80px;
     object-fit: cover;
-    border-radius: 50px;
     border: 3px solid #030c75;
 }
-
-.testimonials-title a {
-    color: #000;
-    font-weight: 600;
-}
-
-.testimonials-title span {
-    font-size: 14px;
-}
-
-.testimonial-carousel .owl-item.middle-active .card {
-    background-color: blue;
-    /* Set background color to blue */
-    color: white;
-    /* Adjust text color if needed */
-}
-
-
 
 /*** Testimonial ***/
 .owl-carousel .owl-dots {
