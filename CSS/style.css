@@ -51,11 +51,9 @@ img {
     max-width: 100%;
     height: auto;
 }
-
 /*** Button ***/
 .btn-gradient {
     background-image: linear-gradient(to right, #21D4FD 0%, #B721FF  50%, #00dbde  100%);
-    margin: 10px;
     font-size: 16px;
     padding: 10px 20px !important;
     text-align: center;
@@ -197,8 +195,9 @@ padding: 5px 10px;
     margin-top: -75px; 
     background:linear-gradient(0deg, rgba(19, 0, 122, 0.658), rgba(29, 0, 95, 0.658)), url(../img/hero-img.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    padding: 250px 0px;
+    padding: 230px 0px;
 }
 
 .hero-header .breadcrumb-item+.breadcrumb-item::before {
@@ -300,6 +299,7 @@ h3{
 }
 .service-card h3{
     color: white;
+    padding-top: 40px !important;
 }
 .service-card p{
     color: white !important;
@@ -354,6 +354,9 @@ h3{
 /*============================================
     Technologies Area
 *=============================================*/
+.tech-item{
+    background-color:   #f5f8ff   !important;
+}
 .tech-item {
     font-size: 14px;
     border: none;

@@ -10,10 +10,6 @@
         padding: 10px 0;
     }
 
-    .header-top {
-        display: none !important;
-    }
-
     .navbar-brand img{
         width: 70%;
     }
@@ -55,7 +51,9 @@
         height: 50px;
         object-fit: contain;
     }
-
+    .header-top {
+        display: none;
+    }
     /*============================================
         Clients Slide END
     *=============================================*/
@@ -80,7 +78,5 @@
         transition: .5s;
         opacity: 1;
     }
-    .header-top {
-        display: none !important;
-    }
+    
 }
