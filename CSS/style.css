@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #14183E;
+    --primary: #3243d8;
     --secondary: #15ACE1;
     --light: #F4F7FE;
     --dark: #14183E;
@@ -330,10 +330,9 @@ h3{
     position: relative;
     background-color: #150B5E;
     color: #ffffff;
-    padding: 150px 0px;
     justify-content: center;
     align-items: center;
-    margin-top: -100px;
+    margin-top: -50px;
 }
 
 .premium-software::before {
@@ -497,11 +496,10 @@ Testimonilas Area
     margin-top: 30px;
     display: inline-block;
     margin-right: 10px;
-    width: 20px;
+    width: 40px;
     height: 4px;
     background: #838383;
     transition: .5s;
-    border-radius: 5px;
 }
 
 .testimonial-carousel .owl-dot.active {

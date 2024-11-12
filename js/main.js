@@ -63,23 +63,24 @@
 
     // app carousel
     $('.app-carousel').owlCarousel({
-        items: 3,          // Default to 3 items for large screens
-        loop: true,        // Enable looping
-        autoplay: true,    // Enable autoplay
-        margin: 20,        // Space between items
-        dots: true,        // Show dots
-        nav: false,        // Hide navigation arrows
+        items: 5, // Number of items to show on large devices
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 3000, // Autoplay time in milliseconds
         responsive: {
             0: {
-                items: 1   // 1 item on small screens (e.g., mobile)
+                items: 1 // Number of items to show on small devices
             },
             768: {
-                items: 2   // 2 items on medium screens (e.g., tablets)
+                items: 2 // Number of items to show on medium devices
             },
             1024: {
-                items: 3   // 3 items on larger screens (e.g., desktops)
+                items: 3 // Number of items to show on large devices
             }
-        }
+        },
+        dots: true,
+        dotsEach: true // Enable dots for each item
     });
 
 
@@ -87,9 +88,10 @@
     $('.Clients-carousel').owlCarousel({
         items: 5,          // Default to 3 items for large screens
         loop: true,        // Enable looping
-        autoplay: true,    // Enable autoplay
+        autoplay: true,
+        autoplayTimeout: 3000,    // Enable autoplay
         margin: 20,        // Space between items
-        dots: true,        // Show dots
+        dots: false,        // Show dots
         nav: false,        // Hide navigation arrows
         responsive: {
             0: {
@@ -101,30 +103,34 @@
               1024: {
                 items: 5  // For large devices (desktop)
             }
-        }
+        },
+        dots: false,
+        dotsEach: false,
     });
     
 
     // Testimonials carousel
     $('.testimonial-carousel').owlCarousel({
-        items: 3,          // Default to 3 items for large screens
-        loop: true,        // Enable looping
-        autoplay: true,    // Enable autoplay
-        margin: 20,        // Space between items
-        dots: true,        // Show dots
-        nav: false,        // Hide navigation arrows
+        items: 5, // Number of items to show on large devices
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 3000, // Autoplay time in milliseconds
         responsive: {
             0: {
-                items: 1   // 1 item on small screens (e.g., mobile)
+                items: 1 // Number of items to show on small devices
             },
             768: {
-                items: 2   // 2 items on medium screens (e.g., tablets)
+                items: 2 // Number of items to show on medium devices
             },
             1024: {
-                items: 3   // 3 items on larger screens (e.g., desktops)
+                items: 3 // Number of items to show on large devices
             }
-        }
+        },
+        dots: true,
+        dotsEach: true // Enable dots for each item
     });
+    
 })(jQuery);
 
     // Counter Js
