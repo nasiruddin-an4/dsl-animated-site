@@ -113,34 +113,36 @@ img {
     background-color: #080046;
 }
 .ht-address ul li {
-display: inline-block;
-color: #fff;
-font-size: 16px;
-font-weight: 400;
-letter-spacing: 0;
-margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-top: 20px;
 }
+
 .ht-address ul li i {
-font-size: 16px;
-margin-right: 7px;
-vertical-align: middle;
+    font-size: 16px;
+    margin-right: 7px;
+    vertical-align: middle;
 }
+
 .ht-social {
-text-align: right;
-margin-top: 20px;
+    text-align: right;
+    margin-top: 20px;
 }
 
 .ht-social ul li {
-display: inline-block;
+    display: inline-block;
 }
 
 .ht-social ul li a {
-display: block;
-color: #fff;
-font-size: 14px;
-margin-left: 10px;
-background-color: #030c75;
-padding: 5px 10px;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+    background-color: #030c75;
+    padding: 5px 10px;
 }
   
 /*============================================
@@ -188,6 +190,17 @@ padding: 5px 10px;
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+}
+
+/* Submenu Dropdown Style */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
 }
 
 /*** Hero Header ***/
@@ -394,35 +407,61 @@ h3{
 /*============================================
     Clients Slide start
 *=============================================*/
-.logos-slider-container a{
-    align-items: center;
-    justify-content: center;
-}
-.logos-slider-container:before,
-.logos-slider-container:after {
+.logos-slider {
+    overflow: hidden;
+    padding: 30px 0px;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos-slider:before, .logos-slider:after {
     position: absolute;
     top: 0;
     content: '';
     width: 250px;
     height: 100%;
     z-index: 2;
-}
-
-.logos-slider-container:before {
+  }
+  
+  .logos-slider:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
-}
-
-.logos-slider-container:after {
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+  }
+  
+  .logos-slider:after {
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
-}
-
-.logos-slider-container img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+  }
+  .logos-slider {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      position: relative;
+  }
+  
+  .logos-slider-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: slide 30s linear infinite;
+  }
+  
+  .logos-slider-container img {
+    width:100px;
+       max-width: 100px;
+  }
+  .logos-slider-container a{
+      margin-left: 100px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translate3d(0,0,0)
+    }
+    100% {
+      transform: translate3d(-100%,0,0)
+    }
+  }
 
 /*============================================
     Clients Slide END
@@ -437,30 +476,63 @@ h3{
     text-align: center;
 }
 
-.industries-item {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    margin: 0 auto;
-    padding: 20px;
+.industry-wave {
+    overflow: hidden;
+    position: relative;
 }
 
-.item-card a {
+.wave-slider {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
-.item-card img {
-    width: 20px;
-    margin-right: 5px;
+.wave-slider-left {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 30s linear infinite;
 }
 
-.item-card a span {
-    color: #000;
-    font-size: 14px;
-    font-weight: 500;
+.wave-slider-right {
+    display: flex;
+    white-space: nowrap;
+    animation: scrollRight 30s linear infinite;
+}
+
+.wave-slider-left a {
+    display: inline-flex;
+    margin-right: 50px; /* Adjust spacing as needed */
+}
+
+.wave-slider-right a {
+    display: inline-flex;
+    margin-right: 50px; /* Adjust spacing as needed */
+}
+
+.wave-slider-left a img{
+    height: 25px;
+    margin-right: 10px;
+}
+
+.wave-slider-right a img{
+    height: 25px;
+    margin-right: 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /*============================================

@@ -84,31 +84,6 @@
     });
 
 
-    // Clients Logo carousel
-    $('.Clients-carousel').owlCarousel({
-        items: 5,          // Default to 3 items for large screens
-        loop: true,        // Enable looping
-        autoplay: true,
-        autoplayTimeout: 3000,    // Enable autoplay
-        margin: 20,        // Space between items
-        dots: false,        // Show dots
-        nav: false,        // Hide navigation arrows
-        responsive: {
-            0: {
-                items: 3  // For small devices
-              },
-              768: {
-                items: 3  // For medium devices (tablet)
-              },
-              1024: {
-                items: 5  // For large devices (desktop)
-            }
-        },
-        dots: false,
-        dotsEach: false,
-    });
-    
-
     // Testimonials carousel
     $('.testimonial-carousel').owlCarousel({
         items: 5, // Number of items to show on large devices
@@ -156,3 +131,29 @@
             }, speed);
         })
     })()
+
+
+    // For The Clients Logo Area
+    const waveContent = document.getElementById("waveContent");
+
+    const clone = waveContent.cloneNode(true);
+    waveContent.parentNode.appendChild(clone);
+    // For The Clients Logo Area
+
+    // waveContentLeft-scrolling effect
+    const waveContentLeft = document.getElementById("waveContentLeft");
+
+    const cloneLeft = waveContentLeft.cloneNode(true);
+    waveContentLeft.parentNode.appendChild(cloneLeft);
+
+    // waveContentLeft-scrolling effect
+    const waveContentRight = document.getElementById("waveContentRight");
+
+    const cloneRight = waveContentRight.cloneNode(true);
+    waveContentRight.parentNode.appendChild(cloneRight);
+
+    // waveContentLeft2-scrolling effect
+    const waveContentLeft2 = document.getElementById("waveContentLeft2");
+
+    const cloneLeft2 = waveContentLeft2.cloneNode(true);
+    waveContentLeft2.parentNode.appendChild(cloneLeft2);
