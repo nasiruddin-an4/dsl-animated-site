@@ -36,16 +36,20 @@
     /*============================================
         Clients Slide start
     *=============================================*/
-    .logos-slider-container:before,
-    .logos-slider-container:after {
+    .logos-slider:before,
+    .logos-slider:after {
         position: absolute;
         top: 0;
         content: '';
-        width: 250px;
+        width: 120px;
         height: 100%;
         z-index: 2;
-        display: none;
     }
+
+    .logos-slider-container a {
+        margin-left: 40px;
+    }
+
     .logos-slider-container img {
         width: 50px;
         height: 50px;

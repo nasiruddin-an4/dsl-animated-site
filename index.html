@@ -92,10 +92,10 @@
                             <div class="dropdown-menu bg-light mt-2">
                                 <a href="#" class="dropdown-item">Smart Business24</a>
                                 <a href="#" class="dropdown-item">Smart Hospital</a>
-
-                                 <!-- Sub-Dropdown -->
+                        
+                                <!-- Sub-Dropdown -->
                                 <div class="dropdown-submenu dropdown-item">
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">One Card</a>
+                                    <a href="#" class="dropdown-toggle">One Card</a>
                                     <ul class="dropdown-menu bg-light mt-2">
                                         <li><a href="#" class="dropdown-item">One Card Feature 1</a></li>
                                         <li><a href="#" class="dropdown-item">One Card Feature 2</a></li>
@@ -103,8 +103,7 @@
                                     </ul>
                                 </div>
                                 <!-- End of Sub-Dropdown -->
-
-
+                        
                                 <a href="#" class="dropdown-item">Smart Edu</a>
                                 <a href="#" class="dropdown-item">One Card</a>
                                 <a href="#" class="dropdown-item">IUMS</a>
@@ -113,10 +112,10 @@
                         <a href="#" class="nav-item nav-link">Portfolio</a>
                         <a href="#" class="nav-item nav-link">Company</a>
                         <a href="#" class="nav-item nav-link">Insight</a>
-                        <!-- Search Bar Start -->
-                        <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
-                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                        <!-- Search Bar Start -->
+                        <!-- Search Icon -->
+                        <button type="button" class="btn text-white p-0" id="openSearch">
+                            <i class="fa fa-search"></i>
+                        </button>
                     </div>
                     <a href="#" class="btn-1">Lets Connect <i class="ri-arrow-right-down-line"></i></a>
                 </div>
@@ -141,25 +140,20 @@
     <!-- Hero End -->
     
     
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+    <!-- Full-Screen Search Box -->
+    <div id="searchBox" class="search-box">
+        <div class="search-content">
+            <button class="close-search" id="closeSearch">&times;</button>
+            <form>
+                <div class="search-input-wrapper">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button type="submit" class="search-icon">
+                        <i class="fa fa-search"></i>
+                    </button>
                 </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-light p-3"
-                            placeholder="Type search keyword">
-                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
-    <!-- Full Screen Search End -->
     
     
     <!-- We Develop Mission Start -->
@@ -563,7 +557,7 @@
     <!-- Trusted by Clients End-->
 
     <!-- Industries We Serve -->
-     <div class="container-fluid bg-white wow fadeIn" data-wow-delay="0.2s">
+     <div class="container-fluid pb-5 bg-white wow fadeIn" data-wow-delay="0.2s">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -574,37 +568,37 @@
                 </div>
 
                 <!-- Industries We Serve Left -->
-                <div class="col-lg-12 pb-5 pt-3 wow fadeIn" data-wow-delay="0.4s">
+                <div class="col-lg-12 pt-3 wow fadeIn" data-wow-delay="0.4s">
                     <div class="industry-wave">
                         <div class="wave-slider">
                             <div class="wave-slider-left" id="waveContentLeft">
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Newtec Pharmaceuticals</span>
+                                    <img src="img/NutecAgro.png" alt="">
+                                    <p>Newtec Pharmaceuticals</p>
                                 </a>
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Haji Md Ibrahim Memorial Hospital</span>
+                                    <img src="img/Haji Md Ibrahim Memorial Hospital.png" alt="">
+                                    <p>Haji Md Ibrahim Memorial Hospital</p>
                                 </a>
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>People Memorial Hospital</span>
+                                    <img src="img/People Memorial Hospital.png" alt="">
+                                    <p>People Memorial Hospital</p>
                                 </a>
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>East Coast Group</span>
+                                    <img src="img/East Coast Group.ico" alt="">
+                                    <p>East Coast Group</p>
                                 </a>
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Green Garden Restaurant</span>
+                                    <img src="img/Green Garden Restaurant.png" alt="">
+                                    <p>Green Garden Restaurant</p>
                                 </a>
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Amar Pharma</span>
+                                    <img src="img/Amar Pharma.png" alt="">
+                                    <p>Amar Pharma</p>
                                 </a>
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Rokeya Hospital, Cumilla</span>
+                                    <img src="img/Rokeya Hospital, Cumilla.png" alt="">
+                                    <p>Rokeya Hospital, Cumilla</p>
                                 </a>
                             </div>
                         </div>
@@ -613,37 +607,37 @@
                 <!-- Industries We Serve Left -->
 
                 <!-- Industries We Serve Right -->
-                <div class="col-lg-12 pb-5 wow fadeIn" data-wow-delay="0.6s">
+                <div class="col-lg-12 pb-5 pt-3 wow fadeIn" data-wow-delay="0.6s">
                     <div class="industry-wave">
                         <div class="wave-slider">
                             <div class="wave-slider-right" id="waveContentRight">
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Newtec Pharmaceuticals</span>
+                                    <img src="img/NutecAgro.png" alt="">
+                                    <p>Newtec Pharmaceuticals</p>
                                 </a>
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Haji Md Ibrahim Memorial Hospital</span>
+                                    <img src="img/Haji Md Ibrahim Memorial Hospital.png" alt="">
+                                    <p>Haji Md Ibrahim Memorial Hospital</p>
                                 </a>
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>People Memorial Hospital</span>
+                                    <img src="img/People Memorial Hospital.png" alt="">
+                                    <p>People Memorial Hospital</p>
                                 </a>
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>East Coast Group</span>
+                                    <img src="img/East Coast Group.ico" alt="">
+                                    <p>East Coast Group</p>
                                 </a>
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Green Garden Restaurant</span>
+                                    <img src="img/Green Garden Restaurant.png" alt="">
+                                    <p>Green Garden Restaurant</p>
                                 </a>
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Amar Pharma</span>
+                                    <img src="img/Amar Pharma.png" alt="">
+                                    <p>Amar Pharma</p>
                                 </a>
                                 <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Rokeya Hospital, Cumilla</span>
+                                    <img src="img/Rokeya Hospital, Cumilla.png" alt="">
+                                    <p>Rokeya Hospital, Cumilla</p>
                                 </a>
                             </div>
                         </div>
@@ -651,45 +645,6 @@
                 </div>
                 <!-- Industries We Serve Right -->
 
-
-                <!-- Industries We Serve Left2 -->
-                <div class="col-lg-12 pb-5 wow fadeIn" data-wow-delay="0.8s">
-                    <div class="industry-wave">
-                        <div class="wave-slider">
-                            <div class="wave-slider-left" id="waveContentLeft2">
-                                <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Newtec Pharmaceuticals</span>
-                                </a>
-                                <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Haji Md Ibrahim Memorial Hospital</span>
-                                </a>
-                                <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>People Memorial Hospital</span>
-                                </a>
-                                <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>East Coast Group</span>
-                                </a>
-                                <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Green Garden Restaurant</span>
-                                </a>
-                                <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Amar Pharma</span>
-                                </a>
-                                <a href="#">
-                                    <img src="img/Group 709.png" alt="">
-                                    <span>Rokeya Hospital, Cumilla</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Industries We Serve Left -->
 
             </div>
         </div>
