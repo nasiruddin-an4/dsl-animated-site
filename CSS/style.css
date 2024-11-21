@@ -51,6 +51,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+
+
 /*** Button ***/
 .btn-gradient {
     background-image: linear-gradient(to right, #21D4FD 0%, #B721FF  50%, #00dbde  100%);
@@ -77,10 +80,6 @@ img {
 .navbar-collapse .btn-1{
     background-color: white;
     padding: 25px 15px;
-}
-.btn {
-    font-weight: 500;
-    transition: .5s;
 }
 
 .btn-square {
@@ -850,3 +849,8 @@ Testimonilas Area
     cursor: pointer;
 }
 
+
+.search-btn{
+    background: none;
+    border: none;
+}

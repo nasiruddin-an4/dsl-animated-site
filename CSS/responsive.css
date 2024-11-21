@@ -1,7 +1,8 @@
 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
-        padding: 10px 15px;
+        margin-top: 5px;
+        padding: 20px 15px;
         background: var(--primary);
     }
 
@@ -61,6 +62,26 @@
     /*============================================
         Clients Slide END
     *=============================================*/
+    .navbar-collapse .btn-1{
+        margin-left: 70px;
+        margin-top: -65px;
+        background-color: white;
+        padding: 10px 15px;
+        width: 70%;
+        
+    }
+    .navbar-collapse .btn-1 a{
+        color: #3249D4;
+        padding: 5px 20px;
+        border-radius: 10px;
+    }
+    .search-btn i{
+        margin-top: 20px;
+        color: #3249D4;
+        background-color: white;
+        padding: 13px;
+    }
+
 
 }
 
@@ -82,5 +103,4 @@
         transition: .5s;
         opacity: 1;
     }
-    
 }

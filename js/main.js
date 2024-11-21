@@ -157,23 +157,23 @@
 
 
     // Get elements
-const openSearch = document.getElementById("openSearch");
-const closeSearch = document.getElementById("closeSearch");
-const searchBox = document.getElementById("searchBox");
+    const openSearch = document.getElementById("openSearch");
+    const closeSearch = document.getElementById("closeSearch");
+    const searchBox = document.getElementById("searchBox");
 
-// Open search box
-openSearch.addEventListener("click", () => {
-    searchBox.style.display = "flex";
-});
+    // Open search box
+    openSearch.addEventListener("click", () => {
+        searchBox.style.display = "flex";
+    });
 
-// Close search box
-closeSearch.addEventListener("click", () => {
-    searchBox.style.display = "none";
-});
-
-// Close search box when clicking outside (optional)
-searchBox.addEventListener("click", (e) => {
-    if (e.target === searchBox) {
+    // Close search box
+    closeSearch.addEventListener("click", () => {
         searchBox.style.display = "none";
-    }
-});
+    });
+
+    // Close search box when clicking outside (optional)
+    searchBox.addEventListener("click", (e) => {
+        if (e.target === searchBox) {
+            searchBox.style.display = "none";
+        }
+    });
